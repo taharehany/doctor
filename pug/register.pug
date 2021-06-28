@@ -1,0 +1,51 @@
+doctype 
+html(lang="en")
+    head
+        include includes/en/head.pug
+    body
+        .main-wrapper.register-page
+            include includes/en/topnav.pug
+            include includes/en/header.pug
+
+            // register part
+            section(class='register-form')
+                  div(class='container')
+                        div(class='row')
+                              div(class='col-lg-6')
+                                    div(class='register-image')
+                                        img(src='images/bgs/register.jpg' class="news-img img-fluid" alt='')
+                              div(class='col-lg-6')
+                                    div(class='register-box')
+                                          div(class='title')
+                                                h2 Create New Account
+                                          div(class='form-area')
+                                                form(action='')
+                                                    .row
+                                                        div(class="col-lg-12")
+                                                            div(class='form-group')
+                                                                input(placeholder='Your Name' class='form-control' type='text')
+                                                        div(class="col-lg-12")            
+                                                            div(class='form-group')
+                                                                input(placeholder='E-mail' class='form-control' type='email')        
+                                                        div(class="col-lg-12")            
+                                                            div(class='form-group')
+                                                                input(placeholder='Mobile' class='form-control' type='number')
+                                                        div(class="col-lg-12")            
+                                                            div(class='form-group')
+                                                                input(placeholder='Address' class='form-control' type='text')
+                                                        div(class="col-lg-12")            
+                                                            div(class='form-group')
+                                                                input(placeholder='Password' class='form-control' type='password')
+                                                        div(class="col-lg-12")            
+                                                            div(class='form-group')
+                                                                input(placeholder='Confirm Password' class='form-control' type='password')
+                                                        div(class="col-lg-12")               
+                                                            div(class='form-group')
+                                                                button(class='btn btn-danger hvr-sweep-to-top' type='submit') Register now
+                                                        div(class="col-lg-12")               
+                                                            div(class='have-account')
+                                                                p Have account ? 
+                                                                    a(class="login-btn" href="login.html") Login
+            // register part
+            include includes/en/footer.pug
+    include includes/en/scripts.pug

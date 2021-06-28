@@ -1,0 +1,810 @@
+@media screen and (max-width: 1199px) {
+  .main-wrapper.about-page section.insurence .insurence-box .space {
+    width: 120px;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .navbar-light.navbar .buttons {
+    order: unset;
+    margin-right: 10px;
+  }
+  header .navbar-light.navbar .navbar-nav {
+    padding-top: 25px;
+  }
+  header .navbar-toggler {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    box-shadow: none;
+    border: 0;
+  }
+  header .navbar-toggler span {
+    display: block;
+    width: 40px;
+    height: 2px;
+    border-radius: 3px;
+    background-color: #fff;
+    position: relative;
+  }
+  header .navbar-toggler span:before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    border-radius: 3px;
+    background: #fff;
+    margin-top: -7px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  header .navbar-toggler span:after {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 30px;
+    height: 2px;
+    border-radius: 3px;
+    background: #fff;
+    margin-top: 7px;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  header .navbar-toggler:focus {
+    outline: none;
+    border: 0;
+    box-shadow: none;
+  }
+  header .navbar-toggler.close span {
+    transform: rotate(50deg);
+    -webkit-transform: rotate(50deg);
+    -moz-transform: rotate(50deg);
+    -ms-transform: rotate(50deg);
+    -o-transform: rotate(50deg);
+    width: 25px;
+  }
+  header .navbar-toggler.close span::before {
+    width: 25px;
+    transform: translateY(7px) rotate(80deg);
+    -webkit-transform: translateY(7px) rotate(80deg);
+    -moz-transform: translateY(7px) rotate(80deg);
+    -ms-transform: translateY(7px) rotate(80deg);
+    -o-transform: translateY(7px) rotate(80deg);
+  }
+  header .navbar-toggler.close span::after {
+    display: none;
+  }
+
+  .select-container section.select-service {
+    position: relative;
+    bottom: 100px;
+  }
+  .select-container section.select-service .select-service-content .first-part .select-service-text {
+    margin-bottom: 15px;
+  }
+  .select-container section.select-service .select-service-content .first-part .select-service-text img {
+    top: 0;
+    max-height: 100px;
+  }
+  .select-container section.select-service .select-service-content .form-part form .submit .btn {
+    width: 100%;
+  }
+  .select-container section.select-service .select-service-content .form-part form .selectors .col-lg-3 {
+    padding-right: 15px !important;
+  }
+
+  section.about {
+    padding-top: 0;
+    margin-top: -80px;
+    padding-bottom: 30px;
+  }
+  section.about .about-images {
+    margin-bottom: 50px;
+  }
+  section.about .about-images .about2 {
+    left: -50px;
+  }
+  section.about .about-images .about3 {
+    bottom: -10%;
+  }
+
+  section.services .service-box {
+    margin-bottom: 25px;
+  }
+
+  section.last-news .title h2 {
+    margin-bottom: 15px;
+  }
+  section.last-news .title p {
+    margin-bottom: 15px;
+  }
+  section.last-news .news-box {
+    margin-bottom: 25px;
+  }
+
+  footer .footer-content .footer-box {
+    margin-bottom: 20px;
+  }
+  footer .footer-content .footer-box h3 {
+    font-size: 18px;
+  }
+
+  .main-wrapper section.appointment .appointment-area .appointment-image {
+    top: -20px;
+    z-index: -1;
+    height: 340px;
+  }
+  .main-wrapper.about-page section.first-about {
+    padding: 20px 0;
+  }
+  .main-wrapper.about-page section.first-about .first-about-text {
+    padding-top: 20px;
+    padding-right: 0px;
+  }
+  .main-wrapper.about-page section.first-about .first-about-image {
+    height: auto;
+  }
+  .main-wrapper.about-page section.about {
+    padding: 30px 0 30px;
+  }
+  .main-wrapper.about-page section.about .about-text {
+    padding-top: 15px;
+  }
+  .main-wrapper section.naumbers .numbers-box {
+    grid-template-columns: 35% 70%;
+  }
+  .main-wrapper.services-page section.naumbers .container-numbers .naumbers-content, .main-wrapper.contact-page section.naumbers .container-numbers .naumbers-content {
+    padding: 40px;
+  }
+  .main-wrapper.forget-page section.forget-form,
+.main-wrapper.forget-page section.login-form,
+.main-wrapper.forget-page section.register-form, .main-wrapper.login-page section.forget-form,
+.main-wrapper.login-page section.login-form,
+.main-wrapper.login-page section.register-form, .main-wrapper.register-page section.forget-form,
+.main-wrapper.register-page section.login-form,
+.main-wrapper.register-page section.register-form {
+    padding: 10px 0;
+  }
+  .main-wrapper.forget-page section.forget-form .forget-image,
+.main-wrapper.forget-page section.forget-form .login-image,
+.main-wrapper.forget-page section.forget-form .register-image,
+.main-wrapper.forget-page section.login-form .forget-image,
+.main-wrapper.forget-page section.login-form .login-image,
+.main-wrapper.forget-page section.login-form .register-image,
+.main-wrapper.forget-page section.register-form .forget-image,
+.main-wrapper.forget-page section.register-form .login-image,
+.main-wrapper.forget-page section.register-form .register-image, .main-wrapper.login-page section.forget-form .forget-image,
+.main-wrapper.login-page section.forget-form .login-image,
+.main-wrapper.login-page section.forget-form .register-image,
+.main-wrapper.login-page section.login-form .forget-image,
+.main-wrapper.login-page section.login-form .login-image,
+.main-wrapper.login-page section.login-form .register-image,
+.main-wrapper.login-page section.register-form .forget-image,
+.main-wrapper.login-page section.register-form .login-image,
+.main-wrapper.login-page section.register-form .register-image, .main-wrapper.register-page section.forget-form .forget-image,
+.main-wrapper.register-page section.forget-form .login-image,
+.main-wrapper.register-page section.forget-form .register-image,
+.main-wrapper.register-page section.login-form .forget-image,
+.main-wrapper.register-page section.login-form .login-image,
+.main-wrapper.register-page section.login-form .register-image,
+.main-wrapper.register-page section.register-form .forget-image,
+.main-wrapper.register-page section.register-form .login-image,
+.main-wrapper.register-page section.register-form .register-image {
+    position: static;
+    max-width: 100%;
+  }
+  .main-wrapper.forget-page section.forget-form .forget-box,
+.main-wrapper.forget-page section.forget-form .login-box,
+.main-wrapper.forget-page section.forget-form .register-box,
+.main-wrapper.forget-page section.login-form .forget-box,
+.main-wrapper.forget-page section.login-form .login-box,
+.main-wrapper.forget-page section.login-form .register-box,
+.main-wrapper.forget-page section.register-form .forget-box,
+.main-wrapper.forget-page section.register-form .login-box,
+.main-wrapper.forget-page section.register-form .register-box, .main-wrapper.login-page section.forget-form .forget-box,
+.main-wrapper.login-page section.forget-form .login-box,
+.main-wrapper.login-page section.forget-form .register-box,
+.main-wrapper.login-page section.login-form .forget-box,
+.main-wrapper.login-page section.login-form .login-box,
+.main-wrapper.login-page section.login-form .register-box,
+.main-wrapper.login-page section.register-form .forget-box,
+.main-wrapper.login-page section.register-form .login-box,
+.main-wrapper.login-page section.register-form .register-box, .main-wrapper.register-page section.forget-form .forget-box,
+.main-wrapper.register-page section.forget-form .login-box,
+.main-wrapper.register-page section.forget-form .register-box,
+.main-wrapper.register-page section.login-form .forget-box,
+.main-wrapper.register-page section.login-form .login-box,
+.main-wrapper.register-page section.login-form .register-box,
+.main-wrapper.register-page section.register-form .forget-box,
+.main-wrapper.register-page section.register-form .login-box,
+.main-wrapper.register-page section.register-form .register-box {
+    padding: 30px 0 0 0 !important;
+    min-height: auto;
+  }
+  .main-wrapper.forget-page section.forget-form .forget-box .form-area .form-group,
+.main-wrapper.forget-page section.forget-form .login-box .form-area .form-group,
+.main-wrapper.forget-page section.forget-form .register-box .form-area .form-group,
+.main-wrapper.forget-page section.login-form .forget-box .form-area .form-group,
+.main-wrapper.forget-page section.login-form .login-box .form-area .form-group,
+.main-wrapper.forget-page section.login-form .register-box .form-area .form-group,
+.main-wrapper.forget-page section.register-form .forget-box .form-area .form-group,
+.main-wrapper.forget-page section.register-form .login-box .form-area .form-group,
+.main-wrapper.forget-page section.register-form .register-box .form-area .form-group, .main-wrapper.login-page section.forget-form .forget-box .form-area .form-group,
+.main-wrapper.login-page section.forget-form .login-box .form-area .form-group,
+.main-wrapper.login-page section.forget-form .register-box .form-area .form-group,
+.main-wrapper.login-page section.login-form .forget-box .form-area .form-group,
+.main-wrapper.login-page section.login-form .login-box .form-area .form-group,
+.main-wrapper.login-page section.login-form .register-box .form-area .form-group,
+.main-wrapper.login-page section.register-form .forget-box .form-area .form-group,
+.main-wrapper.login-page section.register-form .login-box .form-area .form-group,
+.main-wrapper.login-page section.register-form .register-box .form-area .form-group, .main-wrapper.register-page section.forget-form .forget-box .form-area .form-group,
+.main-wrapper.register-page section.forget-form .login-box .form-area .form-group,
+.main-wrapper.register-page section.forget-form .register-box .form-area .form-group,
+.main-wrapper.register-page section.login-form .forget-box .form-area .form-group,
+.main-wrapper.register-page section.login-form .login-box .form-area .form-group,
+.main-wrapper.register-page section.login-form .register-box .form-area .form-group,
+.main-wrapper.register-page section.register-form .forget-box .form-area .form-group,
+.main-wrapper.register-page section.register-form .login-box .form-area .form-group,
+.main-wrapper.register-page section.register-form .register-box .form-area .form-group {
+    margin-bottom: 15px;
+  }
+  .main-wrapper.appointment-page section.appointment-area .form-wizard fieldset.payment .payment-content .payment-box {
+    padding-top: 100px;
+  }
+
+  html[dir=rtl] header .navbar-toggler span:before {
+    left: auto;
+    right: 0;
+  }
+  html[dir=rtl] header .navbar-toggler span:after {
+    left: auto;
+    right: 0;
+  }
+  html[dir=rtl] .select-container section.select-service .select-service-content .first-part .select-service-text h3 {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+  html[dir=rtl].forget-page section.forget-form .forget-box,
+html[dir=rtl].forget-page section.forget-form .login-box,
+html[dir=rtl].forget-page section.forget-form .register-box,
+html[dir=rtl].forget-page section.login-form .forget-box,
+html[dir=rtl].forget-page section.login-form .login-box,
+html[dir=rtl].forget-page section.login-form .register-box,
+html[dir=rtl].forget-page section.register-form .forget-box,
+html[dir=rtl].forget-page section.register-form .login-box,
+html[dir=rtl].forget-page section.register-form .register-box, html[dir=rtl].login-page section.forget-form .forget-box,
+html[dir=rtl].login-page section.forget-form .login-box,
+html[dir=rtl].login-page section.forget-form .register-box,
+html[dir=rtl].login-page section.login-form .forget-box,
+html[dir=rtl].login-page section.login-form .login-box,
+html[dir=rtl].login-page section.login-form .register-box,
+html[dir=rtl].login-page section.register-form .forget-box,
+html[dir=rtl].login-page section.register-form .login-box,
+html[dir=rtl].login-page section.register-form .register-box, html[dir=rtl].register-page section.forget-form .forget-box,
+html[dir=rtl].register-page section.forget-form .login-box,
+html[dir=rtl].register-page section.forget-form .register-box,
+html[dir=rtl].register-page section.login-form .forget-box,
+html[dir=rtl].register-page section.login-form .login-box,
+html[dir=rtl].register-page section.login-form .register-box,
+html[dir=rtl].register-page section.register-form .forget-box,
+html[dir=rtl].register-page section.register-form .login-box,
+html[dir=rtl].register-page section.register-form .register-box {
+    padding: 30px 0 0;
+    min-height: auto;
+  }
+  html[dir=rtl].forget-page section.forget-form .forget-box .form-area .form-group,
+html[dir=rtl].forget-page section.forget-form .login-box .form-area .form-group,
+html[dir=rtl].forget-page section.forget-form .register-box .form-area .form-group,
+html[dir=rtl].forget-page section.login-form .forget-box .form-area .form-group,
+html[dir=rtl].forget-page section.login-form .login-box .form-area .form-group,
+html[dir=rtl].forget-page section.login-form .register-box .form-area .form-group,
+html[dir=rtl].forget-page section.register-form .forget-box .form-area .form-group,
+html[dir=rtl].forget-page section.register-form .login-box .form-area .form-group,
+html[dir=rtl].forget-page section.register-form .register-box .form-area .form-group, html[dir=rtl].login-page section.forget-form .forget-box .form-area .form-group,
+html[dir=rtl].login-page section.forget-form .login-box .form-area .form-group,
+html[dir=rtl].login-page section.forget-form .register-box .form-area .form-group,
+html[dir=rtl].login-page section.login-form .forget-box .form-area .form-group,
+html[dir=rtl].login-page section.login-form .login-box .form-area .form-group,
+html[dir=rtl].login-page section.login-form .register-box .form-area .form-group,
+html[dir=rtl].login-page section.register-form .forget-box .form-area .form-group,
+html[dir=rtl].login-page section.register-form .login-box .form-area .form-group,
+html[dir=rtl].login-page section.register-form .register-box .form-area .form-group, html[dir=rtl].register-page section.forget-form .forget-box .form-area .form-group,
+html[dir=rtl].register-page section.forget-form .login-box .form-area .form-group,
+html[dir=rtl].register-page section.forget-form .register-box .form-area .form-group,
+html[dir=rtl].register-page section.login-form .forget-box .form-area .form-group,
+html[dir=rtl].register-page section.login-form .login-box .form-area .form-group,
+html[dir=rtl].register-page section.login-form .register-box .form-area .form-group,
+html[dir=rtl].register-page section.register-form .forget-box .form-area .form-group,
+html[dir=rtl].register-page section.register-form .login-box .form-area .form-group,
+html[dir=rtl].register-page section.register-form .register-box .form-area .form-group {
+    margin-bottom: 15px;
+  }
+  html[dir=rtl] section.about .about-images .about2 {
+    right: -50px;
+    left: auto;
+  }
+}
+@media screen and (max-width: 767px) {
+  section.about .about-images .about2 {
+    max-width: 250px;
+  }
+  section.about .about-images .about3 {
+    max-width: 250px;
+  }
+
+  section.services .title .more {
+    text-align: unset;
+  }
+  section.services .service-box {
+    max-height: auto;
+  }
+  section.services .service-box .details p {
+    min-height: auto;
+  }
+  section.services .row > * {
+    padding-right: calc(var(--bs-gutter-x) / 2);
+  }
+
+  section.last-news .news-box {
+    max-height: unset;
+  }
+  section.last-news .news-box .news-details h3 {
+    min-height: auto;
+  }
+  section.last-news .news-box .news-details p {
+    min-height: 40px;
+  }
+  section.last-news .row > * {
+    padding-right: calc(var(--bs-gutter-x) / 2);
+  }
+
+  footer .footer-content .footer-box .about p {
+    padding-right: 0;
+    font-size: 14px;
+  }
+  footer .copyright .copy-text {
+    text-align: center;
+    margin-bottom: 5px;
+  }
+  footer .copyright .copy-text p {
+    font-size: 12px;
+  }
+  footer .copyright .copy-icons ul {
+    text-align: center;
+  }
+
+  .main-wrapper.about-page section.insurence .insurence-box .space {
+    width: 100px;
+  }
+  .main-wrapper.services-page section.services-inside .service-box .services-inside-text p {
+    min-height: 50px;
+  }
+
+  .main-wrapper section.banner .banner-content h2 {
+    font-size: 35px;
+    margin-bottom: 10px;
+  }
+  .main-wrapper section.banner .banner-content ul li {
+    font-size: 16px;
+  }
+  .main-wrapper section.naumbers .numbers-box {
+    display: block;
+    text-align: center;
+  }
+  .main-wrapper section.naumbers .numbers-box .naumbers-icon {
+    margin: 0 auto 15px;
+  }
+  .main-wrapper section.appointment .appointment-area .appointment-text {
+    max-width: 320px;
+  }
+  .main-wrapper section.appointment .appointment-area .appointment-text p {
+    font-size: 24px;
+  }
+  .main-wrapper section.appointment .appointment-area .appointment-image {
+    top: -20px;
+  }
+  .main-wrapper section.appointment .appointment-area .appointment-image img {
+    object-fit: unset;
+    -o-object-fit: unset;
+    max-width: 350px;
+    height: auto;
+  }
+  .main-wrapper.services-page section.services-inside, .main-wrapper.contact-page section.services-inside {
+    padding: 40px 0 0;
+  }
+  .main-wrapper.services-page section.naumbers, .main-wrapper.contact-page section.naumbers {
+    padding-bottom: 0;
+  }
+  .main-wrapper.services-page section.naumbers .container-numbers .naumbers-content, .main-wrapper.contact-page section.naumbers .container-numbers .naumbers-content {
+    position: relative;
+    max-width: 100%;
+    top: -135px;
+  }
+  .main-wrapper.services-page footer, .main-wrapper.contact-page footer {
+    margin-top: -100px;
+  }
+  .main-wrapper.news-articles-page section.news-articles .row > * {
+    padding-right: calc(var(--bs-gutter-x) / 2);
+  }
+  .main-wrapper.videos-channel-page section.videos-channel .videos-channel-box .image {
+    height: 320px;
+  }
+  .main-wrapper.videos-channel-page section.videos-channel .videos-channel-box .details h3 {
+    min-height: auto;
+    -webkit-line-clamp: 3;
+  }
+  .main-wrapper.videos-channel-page section.videos-channel .videos-channel-box .details p {
+    min-height: 50px;
+  }
+  .main-wrapper.videos-channel-page section.videos-channel .row > * {
+    padding-right: calc(var(--bs-gutter-x) / 2);
+  }
+  .main-wrapper.videos-channel-page section.banner-videos {
+    padding: 100px 0 250px;
+  }
+  .main-wrapper.videos-channel-page section.banner-videos .banner-text h2 {
+    font-weight: 600;
+    font-size: 18px;
+  }
+  .main-wrapper.videos-channel-page section.banner-videos .banner-text p {
+    font-size: 14px;
+  }
+  .main-wrapper.appointment-page section.appointment-area .form-wizard fieldset {
+    padding-top: 25px;
+  }
+  .main-wrapper.appointment-page section.appointment-area .form-wizard fieldset .select-box .image-area {
+    padding: 40px 0;
+  }
+  .main-wrapper.appointment-page section.appointment-area .form-wizard fieldset .select-box .image-area .icon {
+    width: 100px;
+    height: auto;
+  }
+  .main-wrapper.appointment-page section.appointment-area .form-wizard .form-wizard-buttons {
+    text-align: center;
+    margin-top: 25px;
+  }
+  .main-wrapper.appointment-page section.appointment-area .form-wizard-step::after {
+    display: none;
+  }
+  .main-wrapper.appointment-page section.appointment-area .form-wizard-step span {
+    font-size: 12px;
+    margin-left: 5px;
+  }
+  .main-wrapper section.banner {
+    padding: 50px 0;
+  }
+
+  html[dir=rtl] section.services .title .more {
+    text-align: right;
+  }
+  html[dir=rtl] footer .copyright .copy-icons ul {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 575px) {
+  .title p {
+    font-size: 16px;
+  }
+
+  section.slider {
+    padding: 80px 0 100px;
+  }
+  section.slider .slider-content .first-part .slider-text h2 {
+    font-size: 30px;
+  }
+
+  .select-container section.select-service .select-service-content .first-part .select-service-text img {
+    top: 0;
+    max-height: 100px;
+  }
+  .select-container section.select-service .select-service-content .form-part form .submit .btn {
+    width: 100%;
+  }
+  .select-container section.select-service .select-service-content .form-part form .selectors .col-lg-3 {
+    padding-right: 15px !important;
+  }
+
+  section.about .about-text p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  section.about .about-images .about2 {
+    left: -25px;
+  }
+  section.about .about-images .about3 {
+    bottom: -10%;
+  }
+
+  .main-wrapper.about-page section.insurence .insurence-box {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+  }
+  .main-wrapper.about-page section.insurence .insurence-box .space {
+    min-width: 100px;
+  }
+  .main-wrapper.about-page section.insurence .title p {
+    font-size: 16px;
+    font-weight: 500;
+  }
+
+  html[dir=rtl] header .navbar-light.navbar .buttons {
+    margin-left: 10px;
+  }
+  html[dir=rtl] section.about .about-images .about2 {
+    right: -25px;
+    left: auto;
+  }
+}
+@media screen and (max-width: 500px) {
+  .title h2 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  .title p {
+    font-size: 16px;
+  }
+
+  header {
+    top: 56.92px;
+  }
+
+  section.top-nav .part .logo a img {
+    max-width: 150px;
+  }
+  section.top-nav .part.other .icon.account .btn {
+    font-size: 10px;
+  }
+
+  header .navbar-light.navbar .buttons .butt .btn {
+    font-size: 10px;
+  }
+
+  .select-container section.select-service {
+    background-color: #fff;
+    padding: 20px;
+  }
+  .select-container section.select-service .select-service-content .first-part .select-service-text h3 {
+    padding-right: 20px;
+    font-size: 22px;
+  }
+
+  /* user popup buttons part */
+  section.top-nav .part.other .icon.account .data-user-popup {
+    width: auto;
+    min-width: auto;
+    top: 40px;
+    padding: 20px;
+  }
+  section.top-nav .part.other .icon.account .data-user-popup .popuptext p {
+    font-size: 12px;
+    white-space: nowrap;
+  }
+  section.top-nav .part.other .icon.account .data-user-popup .popuptext p span {
+    margin-left: 5px;
+  }
+  section.top-nav .part.other .icon.account .data-user-popup .popuptext .logout .btn {
+    font-size: 12px;
+  }
+  section.top-nav .part.other .icon.account .data-user-popup .popuptext::after {
+    top: -39px;
+  }
+  section.top-nav .part.other .icon.account .user-popup-buttons {
+    width: auto;
+    min-width: auto;
+    top: 40px;
+    padding: 20px;
+  }
+  section.top-nav .part.other .icon.account .user-popup-buttons .popuptext {
+    margin-bottom: 15px;
+  }
+  section.top-nav .part.other .icon.account .user-popup-buttons .popuptext p {
+    white-space: nowrap;
+  }
+  section.top-nav .part.other .icon.account .user-popup-buttons .popuptext h3 {
+    font-size: 12px;
+  }
+  section.top-nav .part.other .icon.account .user-popup-buttons .popuptext::after {
+    top: -39px;
+  }
+  section.top-nav .part.other .icon.account .user-popup-buttons .popupbuttons .login,
+section.top-nav .part.other .icon.account .user-popup-buttons .popupbuttons .registration {
+    width: auto;
+  }
+  section.top-nav .part.other .icon.account .user-popup-buttons .popupbuttons .login .btn,
+section.top-nav .part.other .icon.account .user-popup-buttons .popupbuttons .registration .btn {
+    font-size: 12px;
+    padding: 7px 30px;
+  }
+  section.top-nav .part.other .icon.account .user-popup-buttons .popupbuttons .login {
+    margin-right: 10px;
+  }
+
+  /* popup data user part */
+  .main-wrapper section.banner .banner-content h2 {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  .main-wrapper section.banner .banner-content ul li {
+    font-size: 16px;
+  }
+  .main-wrapper section.naumbers .numbers-box {
+    margin-bottom: 25px;
+  }
+  .main-wrapper section.naumbers .numbers-box .naumbers-icon {
+    width: 80px;
+    height: 80px;
+    line-height: 80px;
+  }
+  .main-wrapper section.naumbers .numbers-box .naumbers-icon img {
+    max-width: 50px;
+  }
+  .main-wrapper section.naumbers .numbers-box .numbers-text span {
+    font-size: 34px;
+  }
+  .main-wrapper section.naumbers .numbers-box .numbers-text h3 {
+    font-size: 16px;
+  }
+  .main-wrapper section.appointment .appointment-area .appointment-text p {
+    font-size: 20px;
+  }
+  .main-wrapper section.appointment .appointment-area .appointment-image {
+    top: -20px;
+    z-index: -1;
+  }
+  .main-wrapper.appointment-page section.appointment-area .title h2 {
+    font-size: 24px;
+  }
+  .main-wrapper.appointment-page section.appointment-area .form-wizard .form-wizard-buttons .btn {
+    padding: 7px 43px;
+  }
+  .main-wrapper.appointment-page section.appointment-area .form-wizard fieldset.payment .payment-content {
+    padding: 20px;
+  }
+  .main-wrapper.appointment-page section.appointment-area .form-wizard fieldset.payment .payment-content .title h2 {
+    font-size: 14px;
+  }
+  .main-wrapper.appointment-page section.appointment-area .form-wizard-steps {
+    padding: 5px 8px;
+  }
+  .main-wrapper.appointment-page section.appointment-area .form-wizard-step {
+    text-align: center;
+  }
+  .main-wrapper.appointment-page section.appointment-area .form-wizard-step .form-wizard-step-icon i {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 22px;
+    font-size: 12px;
+  }
+  .main-wrapper.videos-channel-page section.videos-channel .title p {
+    font-size: 16px;
+  }
+  .main-wrapper.about-page section.first-about .first-about-text p {
+    font-size: 12px;
+  }
+
+  html[dir=rtl] section.top-nav .part.other .icon.account .user-popup-buttons .popupbuttons .login {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  html[dir=rtl] .select-container section.select-service .select-service-content .first-part .select-service-text h3 {
+    padding-right: 0;
+    padding-left: 20px;
+  }
+
+  .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box {
+    padding: 15px;
+  }
+}
+@media screen and (max-width: 400px) {
+  section.top-nav .part .logo a img {
+    max-width: 130px;
+  }
+  section.top-nav .part.other .icon.account .btn {
+    white-space: nowrap;
+    font-size: 10px;
+    padding: 5px 10px;
+  }
+  section.top-nav .part.other .icon {
+    margin-right: 10px;
+  }
+  section.top-nav .part.other .icon i {
+    font-size: 15px;
+  }
+  section.top-nav .part.other .icon.lang {
+    margin-right: 10px;
+  }
+  /* user popup buttons part */
+  section.top-nav .part.other .icon.account .data-user-popup {
+    max-width: 250px;
+  }
+  section.top-nav .part.other .icon.account .user-popup-buttons {
+    max-width: 250px;
+  }
+  section.top-nav .part.other .icon.account .user-popup-buttons .popupbuttons .login,
+section.top-nav .part.other .icon.account .user-popup-buttons .popupbuttons .registration {
+    width: auto;
+  }
+  section.top-nav .part.other .icon.account .user-popup-buttons .popupbuttons .login .btn,
+section.top-nav .part.other .icon.account .user-popup-buttons .popupbuttons .registration .btn {
+    padding: 4px 15px;
+  }
+
+  /* popup data user part */
+  header {
+    top: 49.54px;
+  }
+
+  section.about .about-images {
+    margin-bottom: 20px;
+  }
+  section.about .about-images .about2 {
+    max-width: 150px;
+  }
+  section.about .about-images .about3 {
+    max-width: 150px;
+  }
+
+  footer .footer-content .footer-logo {
+    padding: 10px 15px;
+  }
+  footer .footer-content .footer-logo a img {
+    max-width: 165px;
+  }
+  footer .footer-content .footer-logo .footer-box ul li {
+    margin-bottom: 10px;
+  }
+  footer .footer-content .footer-logo .footer-box .contact ul li {
+    margin-bottom: 10px;
+    padding-left: 30px;
+    font-size: 14px;
+  }
+  footer .footer-content .footer-logo .footer-box .contact ul li a {
+    font-size: 12px;
+  }
+  footer .footer-content .footer-logo .footer-box .contact ul li i {
+    font-size: 16px;
+  }
+  footer .footer-content .footer-logo .footer-box h3 {
+    font-size: 16px;
+  }
+
+  .alert.alert-warning p {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .alert.alert-warning .close {
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+  }
+  .alert.alert-warning .close span {
+    font-size: 20px;
+  }
+
+  .main-wrapper section.banner .banner-content h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+  }
+  .main-wrapper section.banner .banner-content ul li {
+    font-size: 14px;
+  }
+
+  .xdsoft_datetimepicker .xdsoft_calendar td,
+.xdsoft_datetimepicker .xdsoft_calendar th {
+    font-size: 14px;
+    padding: 5px;
+  }
+}
+
+/*# sourceMappingURL=responsive.css.map */

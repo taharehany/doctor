@@ -1,0 +1,146 @@
+
+<!--section.loading 
+img(src="images/loading.gif", class="img-fluid", alt="")
+
+-->
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/fontawesome.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/jquery.fancybox.js"></script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/jquery.counterup.min.js"></script>
+<script src="js/appointment.js"></script>
+<script src="js/jquery.datetimepicker.full.min.js"></script>
+<script src="https://www.paypal.com/sdk/js?client-id=sb&amp;currency=USD" data-sdk-integration-source="button-factory"></script>
+<script src="js/script.js"></script>
+<script>
+  jQuery('#datetimepicker').datetimepicker({
+  /*
+  ownerDocument: document,
+  contentWindow: window,
+  value: '',
+  rtl: false,
+  format: 'Y/m/d H:i',
+  formatTime: 'H:i',
+  formatDate: 'Y/m/d',
+  startDate:  false,
+  step: 60,
+  monthChangeSpinner: true,
+  closeOnDateSelect: false,
+  closeOnTimeSelect: true,
+  closeOnWithoutClick: true,
+  closeOnInputClick: true,
+  openOnFocus: true,
+  timepicker: true,
+  datepicker: true,
+  weeks: false,
+  defaultTime: false, 
+  defaultDate: false,
+  minDate: false,
+  maxDate: false,
+  minTime: false,
+  maxTime: false,
+  minDateTime: false,
+  maxDateTime: false,
+  allowTimes: [],
+  opened: false,
+  initTime: true,
+  inline: false,
+  theme: '',
+  touchMovedThreshold: 5,
+  onSelectDate: function () {},
+  onSelectTime: function () {},
+  onChangeMonth: function () {},
+  onGetWeekOfYear: function () {},
+  onChangeYear: function () {},
+  onChangeDateTime: function () {},
+  onShow: function () {},
+  onClose: function () {},
+  onGenerate: function () {},
+  withoutCopyright: true,
+  inverseButton: false,
+  hours12: false,
+  next: 'xdsoft_next',
+  prev : 'xdsoft_prev',
+  dayOfWeekStart: 0,
+  parentID: 'body',
+  timeHeightInTimePicker: 25,
+  timepicker<a href="https://www.jqueryscript.net/tags.php?/Scroll/">Scroll</a>bar: true,
+  todayButton: true,
+  prevButton: true,
+  nextButton: true,
+  defaultSelect: true,
+  scrollMonth: true,
+  scrollTime: true,
+  scrollInput: true,
+  lazyInit: false,
+  mask: false,
+  validateOnBlur: true,
+  allowBlank: true,
+  yearStart: 1950,
+  yearEnd: 2050,
+  monthStart: 0,
+  monthEnd: 11,
+  style: '',
+  id: '',
+  fixed: false,
+  roundTime: 'round',
+  className: '',
+  weekends: [],
+  highlightedDates: [],
+  highlightedPeriods: [],
+  allowDates : [],
+  allowDateRe : null,
+  disabledDates : [],
+  disabledWeekDays: [],
+  yearOffset: 0,
+  beforeShowDay: null,
+  enterLikeTab: true,
+  showApplyButton: false, */
+  
+  //actual options  
+  scrollMonth: false,
+  scrollTime: false,
+  format: 'd.m.Y H:i',
+  inline: true,
+  lang: 'en',
+  step: 60,
+  yearStart: 2021,
+  yearEnd: 2025,
+  startDate: new Date(),
+  defaultDate: new Date(),
+  });
+</script>
+<script>
+  function initPayPalButton() {
+  paypal.Buttons({
+  style: {
+  shape: 'pill',
+  color: 'gold',
+  layout: 'horizontal',
+  label: 'paypal',
+  
+  },
+  
+  createOrder: function(data, actions) {
+  return actions.order.create({
+  purchase_units: [{"amount":{"currency_code":"USD","value":1}}]
+  });
+  },
+  
+  onApprove: function(data, actions) {
+  return actions.order.capture().then(function(details) {
+  alert('Transaction completed by ' + details.payer.name.given_name + '!');
+  });
+  },
+  
+  onError: function(err) {
+  console.log(err);
+  }
+  }).render('#paypal-button-container');
+  }
+  initPayPalButton();
+</script>

@@ -1,0 +1,950 @@
+/** main style **/
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+/** top nav **/
+section.top-nav {
+    padding: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    align-items: center;
+
+    .part {
+        .logo {
+            a {
+                img {
+                    max-width: 250px;
+                    max-height: 100px;
+                }
+            }
+        }
+
+        &.other {
+            height: 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+
+            .icon {
+                margin-right: 15px;
+
+                &.notification {
+                    color: #ff0000;
+
+                    i {
+                        font-size: 20px;
+                        color: #ff0000;
+                    }
+                }
+
+                &.lang {
+                    color: $main_color;
+                    position: relative;
+
+                    i {
+                        font-size: 20px;
+                        color: $main_color;
+                        cursor: pointer;
+                    }
+
+                    .dropdown-lang {
+                        position: absolute;
+                        top: 25px;
+                        right: 100%;
+                        background-color: #ffffff;
+                        z-index: 9;
+                        box-shadow: 1px 1px 5px -1px #585858;
+                        @include MyPrefixBorderRadiuslang;
+                        overflow: hidden;
+                        display: none;
+
+                        .items {
+                            display: block;
+
+                            a {
+                                display: block;
+                                color: #818181;
+                                padding: 10px 15px 10px 40px;
+                                font-size: 16px;
+                                @include MyPrefixTransition;
+
+                                &:hover {
+                                    background-color: $main_color;
+                                    color: #fff;
+                                }
+                            }
+                        }
+
+                        &.display-none {
+                            display: none;
+                        }
+                    }
+                }
+
+                &.account {
+                    position: relative;
+
+                    .btn {
+                        background-color: $main_color;
+                        border-color: $main_color;
+                        font-size: 16px;
+                        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.16);
+                        @include MyPrefixBorderRadius10;
+                    }
+
+                    /* popup data user part */
+                    .data-user-popup {
+                        @include MyPrefixBorderRadius10;
+                        position: absolute;
+                        padding: 25px;
+                        background-color: #fff;
+                        cursor: pointer;
+                        right: 0;
+                        top: 50px;
+                        z-index: 9999;
+                        min-width: 320px;
+                        display: none;
+                        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.16);
+
+                        .popuptext {
+                            color: #000;
+                            position: relative;
+
+                            .edit {
+                                position: absolute;
+                                right: 0;
+                                top: 0;
+
+                                a {
+                                    i {
+                                        height: 25px;
+                                        width: 25px;
+                                        line-height: 25px;
+                                        text-align: center;
+                                        background-color: $main_color;
+                                        color: #fff;
+                                        font-size: 12px;
+                                        @include MyPrefixBorderRadius50;
+                                    }
+                                }
+                            }
+
+                            p {
+                                margin-bottom: 10px;
+                                color: #3a3a3a;
+                                font-size: 14px;
+
+                                span {
+                                    font-weight: 600;
+                                    margin-left: 7px;
+                                }
+
+                                &:last-child {
+                                    margin-bottom: 0;
+                                }
+                            }
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                top: -45px;
+                                right: 6.5%;
+                                margin-left: -10px;
+                                border-width: 10px;
+                                border-style: solid;
+                                border-color: transparent transparent #fff transparent;
+                            }
+
+                            .logout {
+                                margin-top: 25px;
+
+                                .btn {
+                                    background-color: transparent;
+                                    color: $main_color;
+                                    width: 100%;
+                                    box-shadow: none;
+                                    font-size: 14px;
+                                }
+                            }
+                        }
+                    }
+
+                    /* popup data user part */
+
+                    /* user popup buttons part */
+                    .user-popup-buttons {
+                        @include MyPrefixBorderRadius10;
+                        position: absolute;
+                        background-color: #fff;
+                        padding: 25px;
+                        cursor: pointer;
+                        right: 0;
+                        top: 50px;
+                        z-index: 9999;
+                        min-width: 320px;
+                        display: none;
+                        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.16);
+
+                        .popuptext {
+                            margin-bottom: 25px;
+
+                            h3 {
+                                font-size: 14px;
+                            }
+                        }
+
+                        .popupbuttons {
+                            color: #000;
+                            display: flex;
+                            justify-content: space-between;
+
+                            &::after {
+                                content: "";
+                                position: absolute;
+                                bottom: 100%;
+                                right: 13.5%;
+                                margin-left: -10px;
+                                border-width: 10px;
+                                border-style: solid;
+                                border-color: transparent transparent #fff transparent;
+                            }
+
+                            .login,
+                            .registration {
+                                text-align: center;
+                                width: 47%;
+
+                                .btn {
+                                    background-color: transparent;
+                                    color: $main_color;
+                                    width: 100%;
+                                    box-shadow: none;
+                                    font-size: 14px;
+                                }
+                            }
+
+                            .registration {
+                                .btn {
+                                    background-color: $main_color;
+                                    color: #fff;
+                                }
+                            }
+                        }
+                    }
+
+                    /* popup data user part */
+                }
+
+                &:last-child {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+}
+
+/** top nav **/
+
+/** header **/
+header {
+    background-color: $second_color;
+    @include MyPrefixTransition;
+    position: static;
+    top: 80px;
+    width: 100%;
+    z-index: 999;
+
+    .navbar-light {
+        &.navbar {
+            padding: 15px 0;
+
+            .buttons {
+                order: 2;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+
+                .butt {
+                    margin-right: 10px;
+
+                    .btn {
+                        @include MyPrefixBorderRadius10;
+                        font-size: 16px;
+                        padding: 6px 12px;
+                    }
+
+                    &.appoint {
+                        .btn {
+                            text-transform: uppercase;
+                            background-color: $main_color;
+                            border-color: $main_color;
+
+                            &:hover {
+                                color: #000;
+                            }
+                        }
+
+                        .hvr-sweep-to-top:before {
+                            background: #fff;
+                        }
+                    }
+
+                    &.call {
+                        .btn {
+                            text-transform: capitalize;
+                            background-color: transparent;
+                            border-color: #fff;
+
+                            &:hover {
+                                color: #000;
+                            }
+                        }
+
+                        .hvr-sweep-to-top:before {
+                            background: #fff;
+                        }
+                    }
+
+                    &:last-child {
+                        margin-right: 0;
+                    }
+                }
+            }
+
+            .navbar-collapse {
+                max-width: 690px;
+            }
+        }
+
+        .navbar-nav {
+            padding: 0;
+
+            .nav-link {
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 14px;
+                padding: 7px 15px;
+
+                &.active,
+                .show>.nav-link {
+                    color: $main_color;
+                }
+
+                &:hover,
+                &:focus {
+                    color: $main_color;
+                }
+            }
+        }
+    }
+
+    &.fixed-header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 999;
+    }
+}
+
+/** header **/
+
+/* slider style */
+section.slider {
+    background: url(../images/slider/slider.png) center center;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 120px 0 120px;
+
+    &::after {
+        content: "";
+        position: absolute;
+        background-color: #abdaf0;
+        opacity: 24.5%;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+
+    .slider-content {
+        .first-part {
+            margin-bottom: 30px;
+
+            .slider-text {
+                margin-bottom: 30px;
+
+                h2 {
+                    color: $second_color;
+                    max-width: 800px;
+                    font-size: 40px;
+                    margin-bottom: 20px;
+                    text-transform: capitalize;
+                    line-height: normal;
+                    font-weight: 700;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                }
+
+                p {
+                    max-width: 750px;
+                    color: $second_color;
+                    margin-bottom: 20px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    font-size: 16px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 4;
+                    -webkit-box-orient: vertical;
+                }
+
+                .slider-btn {
+                    .btn {
+                        background-color: $lightly_color;
+                        border-color: $lightly_color;
+                        padding: 7px 35px;
+                        @include MyPrefixBorderRadius10;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* slider style */
+
+/* select service part */
+.select-container {
+    position: relative;
+    z-index: 2;
+
+    section.select-service {
+        background-color: #fff;
+        position: absolute;
+        bottom: -155px;
+        box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.06);
+        padding: 25px 50px;
+        @include MyPrefixBorderRadius20;
+
+        .select-service-content {
+            .first-part {
+                height: 100%;
+                display: flex;
+                align-items: center;
+                position: relative;
+
+                .select-service-text {
+                    img {
+                        position: absolute;
+                        left: -30px;
+                        top: 10px;
+                    }
+
+                    h3 {
+                        font-size: 26px;
+                        padding-right: 45px;
+                        line-height: normal;
+                        font-weight: 600;
+                        color: $second_color;
+
+                        span.diff-color {
+                            color: $main_color;
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            .form-part {
+                h3 {
+                    font-size: 18px;
+                    color: $second_color;
+                    opacity: 45%;
+                    font-weight: 600;
+                    margin-bottom: 20px;
+                    text-transform: uppercase;
+                }
+
+                form {
+                    .selectors {
+                        margin-bottom: 15px;
+
+                        .col-lg-3 {
+                            padding-right: 0 !important;
+                        }
+
+                        .form-group {
+                            margin-bottom: 12px;
+
+                            button {
+                                background-color: #f6f7fa;
+                                border: none;
+                                padding: 10px 15px;
+                                font-size: 12px;
+                                height: 55px;
+                                @include MyPrefixBorderRadius5;
+                                @include MyPrefixTransition;
+
+                                &:hover,
+                                &:focus {
+                                    background-color: $second_color;
+                                    color: #fff;
+                                    outline: none;
+                                    box-shadow: none;
+                                }
+                            }
+                        }
+                    }
+
+                    .submit {
+                        .btn {
+                            background-color: $main_color;
+                            color: #fff;
+                            @include MyPrefixBorderRadius10;
+                            padding: 7px 27px;
+                            box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.16);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* select service part */
+
+/* about part */
+section.about {
+    background: url(../images/bgs/about-bg.png) left center no-repeat;
+    background-size: contain;
+    position: relative;
+    padding-top: 185px;
+    padding-bottom: 120px;
+
+    .about-images {
+        position: relative;
+
+        .about2 {
+            position: absolute;
+            left: -150px;
+            top: 45%;
+            max-width: 350px;
+        }
+
+        .about3 {
+            position: absolute;
+            left: 35%;
+            bottom: -26%;
+            max-width: 350px;
+        }
+    }
+
+    .about-text {
+        p {
+            font-size: 16px;
+            color: $second_color;
+            padding-right: 18px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 8;
+            -webkit-box-orient: vertical;
+        }
+    }
+}
+
+/* about part */
+
+/* services part */
+section.services {
+    background-color: #f8f8f8;
+    padding: $padding_section;
+
+    .title {
+        p {
+            max-width: 545px;
+        }
+
+        .more {
+            text-align: right;
+
+            .btn {
+                color: $main_color;
+                border-color: $main_color;
+                @include MyPrefixBorderRadius10;
+                font-size: 16px;
+            }
+        }
+    }
+
+    .service-box {
+        @include MyPrefixBorderRadius10;
+        overflow: hidden;
+        border: 1px solid rgb(206 206 206 / 20%);
+        max-height: 560px;
+
+        .image {
+            display: flex;
+            align-items: center;
+            height: 230px;
+            overflow: hidden;
+
+            img.serv-img {
+                width: 100%;
+                min-height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+                max-height: 100%;
+                @include MyPrefixTransition;
+            }
+        }
+
+        .details {
+            background-color: $main_color;
+            padding: 15px;
+            padding-top: 50px;
+            position: relative;
+
+            h3 {
+                color: #fff;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: 600;
+                margin-bottom: 15px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 1;
+                -webkit-box-orient: vertical;
+            }
+
+            p {
+                color: #fff;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 6;
+                -webkit-box-orient: vertical;
+                min-height: 145px;
+            }
+
+            .clickable {
+                text-align: center;
+
+                .btn {
+                    @include MyPrefixBorderRadius10;
+                    box-shadow: 0 0px 10px 0 rgb(140 140 140 / 78%) inset;
+                    background-color: transparent;
+                    border-color: #fff;
+                    color: #fff;
+                    text-transform: capitalize;
+                    font-size: 16px;
+                    padding: 7px 30px;
+                    overflow: hidden;
+                }
+            }
+
+            .icon {
+                position: absolute;
+                left: 15px;
+                top: -35px;
+                height: 70px;
+                width: 70px;
+                text-align: center;
+                background-color: #fff;
+                line-height: 70px;
+                box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.16);
+                @include MyPrefixBorderRadius3;
+
+                img {
+                    width: 40px;
+                }
+            }
+        }
+
+        &:hover {
+            .image {
+                img.serv-img {
+                    @include MyPrefixTransformScale2;
+                }
+            }
+        }
+    }
+
+    .row>* {
+        padding-right: calc(var(--bs-gutter-x) / 0);
+        margin-top: var(--bs-gutter-y);
+    }
+}
+
+/* services part */
+
+/* last news part */
+section.last-news {
+    background-color: #fff;
+    padding: $padding_section;
+
+    .title {
+        h2 {
+            margin-bottom: 25px;
+        }
+
+        p {
+            padding-right: 25px;
+            margin-bottom: 40px;
+        }
+
+        .more {
+            .btn {
+                color: $main_color;
+                border-color: $main_color;
+                @include MyPrefixBorderRadius10;
+                font-size: 16px;
+                padding: 7px 30px;
+            }
+        }
+    }
+
+    .news-box {
+        @include MyPrefixBorderRadius15;
+        overflow: hidden;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+        @include MyPrefixTransition;
+        max-height: 430px;
+
+        .image {
+            display: flex;
+            align-items: center;
+            width: 100%;
+            height: 190px;
+            overflow: hidden;
+
+            img {
+                min-height: 100%;
+                width: 100%;
+                min-height: 100%;
+                -o-object-fit: cover;
+                object-fit: cover;
+                @include MyPrefixTransition;
+            }
+        }
+
+        .news-details {
+            padding: 25px 15px;
+
+            h3 {
+                font-size: 16px;
+                text-transform: uppercase;
+                font-weight: 600;
+                color: #707070;
+                line-height: 1.4;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                min-height: 45px;
+            }
+
+            p {
+                font-size: 14px;
+                color: #909090;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                min-height: 85px;
+            }
+
+            .clickable {
+                .btn {
+                    color: $main_color;
+                    text-transform: uppercase;
+                    padding-left: 0;
+                    font-weight: 600;
+                    letter-spacing: 0.5px;
+
+                    img {
+                        max-width: 7px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+        }
+
+        &:hover {
+            box-shadow: none;
+
+            .image {
+                img {
+                    @include MyPrefixTransformScale2;
+                }
+            }
+        }
+    }
+
+    .row>* {
+        padding-right: calc(var(--bs-gutter-x) / 0);
+        margin-top: var(--bs-gutter-y);
+    }
+}
+
+/* last news part */
+
+/* footer part */
+footer {
+    background-color: #013364;
+    color: #fff;
+
+    .footer-content {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+
+        .footer-logo {
+            background-color: #fff;
+            padding: 15px 25px;
+            display: inline-block;
+            @include MyPrefixBorderRadiusSide;
+            margin-bottom: 50px;
+
+            a {
+                img {
+                    max-width: 240px;
+                }
+            }
+        }
+
+        .footer-box {
+            h3 {
+                font-size: 20px;
+                font-weight: 600;
+                margin-bottom: 15px;
+                text-transform: capitalize;
+                letter-spacing: 1px;
+            }
+
+            ul {
+                padding: 0;
+
+                li {
+                    list-style: none;
+                    margin-bottom: 10px;
+                    font-size: 14px;
+
+                    a {
+                        color: #fff;
+                        text-transform: capitalize;
+
+                        img {
+                            width: 7px;
+                            margin-left: 5px;
+                        }
+
+                        &.btn {
+                            padding-left: 0;
+                            padding-top: 0;
+                            color: $main_color;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+
+            .about {
+                p {
+                    padding-right: 30px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 8;
+                    -webkit-box-orient: vertical;
+                    font-size: 14px;
+                }
+
+                .btn {
+                    padding-left: 0;
+                    padding-top: 0;
+                    color: $main_color;
+                    font-weight: 600;
+
+                    img {
+                        width: 7px;
+                        margin-left: 5px;
+                    }
+                }
+            }
+
+            .contact {
+                ul {
+                    li {
+                        padding-left: 35px;
+                        position: relative;
+
+                        i {
+                            position: absolute;
+                            font-size: 20px;
+                            left: 0;
+                        }
+
+                        span {
+                            display: block;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: -webkit-box;
+                            -webkit-line-clamp: 3;
+                            -webkit-box-orient: vertical;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        padding: 15px 0;
+
+        .copy-text {
+            p {
+                margin-bottom: 0;
+                color: #fff;
+                font-size: 14px;
+            }
+        }
+
+        .copy-icons {
+            ul {
+                padding: 0;
+                margin-bottom: 0;
+                text-align: right;
+
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    margin-left: 10px;
+
+                    a {
+                        color: #fff;
+
+                        i {
+                            font-size: 18px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* footer part */
+
+/** main style **/

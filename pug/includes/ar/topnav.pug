@@ -1,0 +1,47 @@
+//top nav part
+section(class="top-nav")
+    .container
+        .row 
+            .col-6 
+                .part
+                    .logo 
+                        a(href="index.html")
+                            img(src="images/logo.png", class="img-fluid", alt="") 
+            .col-6
+                .part.other
+                    .icon.notification
+                        a(href="")
+                            i.fas.fa-bell
+                    .icon.lang
+                        div(class='dropdown-lang')
+                            div(class='items')
+                                a(href='index-ar.html') Arabic
+                                a(href='index.html') English
+                        i.fas.fa-globe
+                    .icon.account
+                        a.btn.btn-success.hvr-sweep-to-top(type='button') My Account
+                        
+                        //.data-user-popup
+                            .popuptext 
+                                .edit
+                                    a(href="") 
+                                        i(class='fas fa-pen')
+                                p Name: 
+                                    span Ahmed Khaled     
+                                p Email: 
+                                    span Ahmed Khaled@gmail.com    
+                                p Mobile: 
+                                    span 01150550000  
+                                p Address: 
+                                    span Lorem Ipsum is simply dum    
+                                .logout 
+                                    a.btn.hvr-sweep-to-top(type='button') Logout      
+                        .user-popup-buttons
+                            .popuptext  
+                                h3 You need to register
+                            .popupbuttons
+                                .login
+                                    a.btn.hvr-sweep-to-top(type='button' href="login.html") login      
+                                .registration 
+                                    a.btn.hvr-sweep-to-top(type='button' href="register.html") Registration      
+//top nav part  

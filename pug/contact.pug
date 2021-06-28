@@ -1,0 +1,133 @@
+doctype 
+html(lang="en")
+    head
+        include includes/en/head.pug
+    body
+        .main-wrapper.contact-page
+            include includes/en/topnav.pug
+            include includes/en/header.pug
+
+            // banner part
+            section(class='banner')
+                div(class='container')
+                    div(class='banner-content')
+                        .row 
+                            .col-5.col-lg-8
+                            .col-7.col-lg-4
+                                h2 Contact Us
+                                ul.navigation
+                                    li 
+                                        a(href="" class="") home 
+                                            img(src="images/svg/arrow2.svg", alt="") 
+                                        span Contact Us
+            // banner part
+
+            // contact part
+            section(class='contact')
+                  div(class='container')
+                        div(class='row')
+                              div(class='col-lg-5')
+                                    div(class='contact-info')
+                                        div(class='title')
+                                            span QUICK SUPPORT
+                                            h2 Contact us
+                                            p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem 
+                                        div(class='info-box')
+                                            i(class='fas fa-map-marker-alt')
+                                            p 555 Montgomery Street, 
+                                                br 
+                                                | Suite 1700San Francisco
+                                        div(class='info-box')
+                                            i(class='fas fa-phone-alt')
+                                            span Call us 24/7
+                                            p
+                                                a(href='tel:01111111111') 01111111111
+                                        div(class='info-box')
+                                            i(class='fas fa-envelope')
+                                            span Email
+                                            p
+                                                a(href='mailto:mail@mai.com') info@gmail.com
+                                        div(class='info-box')
+                                            i(class='far fa-clock')
+                                            p Mon -Fri: 8.00 - 20.00 
+                                                br
+                                                | St - Sun: 9.00 - 16.00
+
+                              div(class='col-lg-7')
+                                    div(class='contact-box')
+                                        div(class='alert alert-warning alert-dismissible fade show' role='alert')
+                                            p You should check in on some of those fields below.
+                                            button(type='button' class='close' data-dismiss='alert' aria-label='Close')
+                                                span(aria-hidden='true') &times;
+                                        div(class='title')
+                                            span WRITE US
+                                            h2 Get In Touch
+                                        div(class='form-area')
+                                            form(action='')
+                                                .row
+                                                    div(class="col-lg-6")
+                                                        div(class='form-group')
+                                                            input(placeholder='Your Name' class='form-control' type='text')
+                                                    div(class="col-lg-6")            
+                                                        div(class='form-group')
+                                                            input(placeholder='Mobile' class='form-control' type='text')
+                                                    div(class="col-lg-12")            
+                                                        div(class='form-group')
+                                                            input(placeholder='E-mail' class='form-control' type='text')
+                                                    div(class="col-lg-12")            
+                                                        div(class='form-group')
+                                                            textarea(rows='6' placeholder='Message' class='form-control')
+                                                    div(class="col-lg-12")               
+                                                        div(class='form-group subm')
+                                                            button(class='btn btn-danger hvr-sweep-to-top' type='submit') Send message
+                                                    div(class="col-lg-12")               
+                                                        div(class='text-center')
+                                                            p(class='successfully') Message Send Successfully 
+            // contact part
+
+            // appointment part
+            section(class='appointment')
+                div(class='container')
+                    .appointment-area
+                        .row    
+                            .col-lg-7
+                                .appointment-text
+                                    h2 need a doctor for check-up?
+                                    p just make appointment and we will call you
+                                    div(class='clickable')
+                                        a(href='' class='btn hvr-sweep-to-right') Get an appointment 
+                            .col-lg-5.p-0
+                                .appointment-image
+                                    img(src="images/doc1.png", class="img-fluid", alt="")
+            // appointment part
+            
+            // naumbers part
+            section(class='naumbers')
+                div(class='container container-numbers')
+                    .naumbers-content
+                        .row 
+                            div(class='col-md-4 col-lg-4')
+                                .numbers-box
+                                    .naumbers-icon 
+                                        img(src="images/numbers/01.svg", class ="img-fluid", alt="")
+                                    .numbers-text 
+                                        h3 Years Of Experiense
+                                        span.the-numbers 25
+                            div(class='col-md-4 col-lg-4')
+                                .numbers-box
+                                    .naumbers-icon 
+                                        img(src="images/numbers/02.svg", class ="img-fluid", alt="")
+                                    .numbers-text 
+                                        h3 Medical Branches
+                                        span.the-numbers 3
+                            div(class='col-md-4 col-lg-4')
+                                .numbers-box
+                                    .naumbers-icon 
+                                        img(src="images/numbers/03.svg", class ="img-fluid", alt="")
+                                    .numbers-text 
+                                        h3 Happy Clients
+                                        span.the-numbers 600
+            // naumbers part
+
+            include includes/en/footer.pug
+    include includes/en/scripts.pug

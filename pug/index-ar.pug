@@ -1,0 +1,182 @@
+doctype 
+html(lang="ar" dir="rtl")
+    head
+        include includes/ar/head.pug
+    body
+        .main-wrapper
+            include includes/ar/topnav.pug
+            include includes/ar/header.pug
+
+            // slider part
+            section.slider
+                .container
+                    .slider-content
+                        .first-part
+                            .slider-text
+                                h2 اعتن بنفسك 
+                                    br 
+                                    | صحتك أولا
+
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever text ever
+                                .slider-btn
+                                    a.btn.btn-success(type='button' class="hvr-sweep-to-top" href="appointment-ar.html") Appointment
+                    
+            // slider part
+
+            // select service part
+            .container.select-container
+                section.select-service
+                    .select-service-content
+                        .row 
+                            div(class="col-lg-3")
+                                .first-part
+                                    .select-service-text
+                                        img(src="images/bgs/logo-bg.png", class="img-fluid", alt="")
+                                        h3 Reserve appointment Only on 
+                                            span.diff-color Few Minutes
+                            div(class="col-lg-9")
+                                .form-part
+                                    h3 Select Service
+                                    form(action="")
+                                        .selectors
+                                            .row
+                                                div(class="col-xs-12 col-sm-6 col-lg-3")
+                                                    .form-group
+                                                        button.form-control(name='' value="") Zoom online consultation
+                                                div(class="col-xs-12 col-sm-6 col-lg-3")        
+                                                    .form-group
+                                                        button.form-control(name='' value='') Home consultation
+                                                div(class="col-xs-12 col-sm-6 col-lg-3")        
+                                                    .form-group
+                                                        button.form-control(name='' value='') Clinic consultation
+                                                div(class="col-xs-12 col-sm-6 col-lg-3")        
+                                                    .form-group
+                                                        button.form-control(name='' value='') Urgent consultation Home visit
+                                                div(class="col-xs-12 col-sm-6 col-lg-3")        
+                                                    .form-group
+                                                        button.form-control(name='' value='') Urgent consultation Clinic visit
+                                        .submit
+                                            button.btn.hvr-sweep-to-top Continue booking
+                    
+            // select service part
+
+            // about part
+            section(class='about')
+                div(class='container')
+                    .row    
+                        .col-lg-6 
+                            div(class='about-images')
+                                img(src="images/about/about1.png", class="about1 img-fluid", alt="")
+                                img(src="images/about/about2.png", class="about2 img-fluid", alt="")
+                                img(src="images/about/about3.png", class="about3 img-fluid", alt="")
+                        .col-lg-6 
+                            div(class='title')
+                                h2 About Us
+                                p Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry Dummy Text Of The Printing.
+                            div(class='about-text')
+                                p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
+                                p specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing     
+                    
+            // about part
+            
+            // services part
+            section(class='services')
+                div(class='container')
+                    div(class='title')
+                        .row 
+                            div(class="col-md-8 col-lg-8")  
+                                h2 our services
+                                p Lorem Ipsum Is Simply Dummy Text Of The Printing And Typesetting Industry Dummy Text Of The Printing.
+                            div(class="col-md-4 col-lg-4") 
+                                .more 
+                                    a(href="services-ar.html" class="btn hvr-sweep-to-top") Explore more services 
+                    div(class='row')
+                        div(class='col-md-6 col-lg-3')
+                            div(class='service-box wow fadeInUp' data-wow-duration='1s')
+                                div(class='image')
+                                    img(src='images/services/01.jpg' class="serv-img img-fluid" alt='')
+                                div(class='details')
+                                    .icon
+                                        img(src="images/icons/01.png", class="img-fluid" alt="")
+                                    h3 dental services
+                                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                                    div(class='clickable')
+                                        a(href='services-ar.html' class='btn hvr-sweep-to-top') read more
+                        div(class='col-md-6 col-lg-3')
+                            div(class='service-box wow fadeInUp' data-wow-duration='1s')
+                                div(class='image')
+                                    img(src='images/services/02.jpg' class="serv-img img-fluid" alt='')
+                                div(class='details')
+                                    .icon
+                                        img(src="images/icons/01.png", class="img-fluid" alt="")
+                                    h3 dental services
+                                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                                    div(class='clickable')
+                                        a(href='services-ar.html' class='btn hvr-sweep-to-top') read more
+                        div(class='col-md-6 col-lg-3')
+                            div(class='service-box wow fadeInUp' data-wow-duration='1s')
+                                div(class='image')
+                                    img(src='images/services/03.jpg' class="serv-img img-fluid" alt='')
+                                div(class='details')
+                                    .icon
+                                        img(src="images/icons/01.png", class="img-fluid" alt="")
+                                    h3 dental services
+                                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                                    div(class='clickable')
+                                        a(href='services-ar.html' class='btn hvr-sweep-to-top') read more
+                        div(class='col-md-6 col-lg-3')
+                            div(class='service-box wow fadeInUp' data-wow-duration='1s')
+                                div(class='image')
+                                    img(src='images/services/04.jpg' class="serv-img img-fluid" alt='')
+                                div(class='details')
+                                    .icon
+                                        img(src="images/icons/01.png", class="img-fluid" alt="")
+                                    h3 dental services
+                                    p Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an 
+                                    div(class='clickable')
+                                        a(href='services-ar.html' class='btn hvr-sweep-to-top') read more
+            // services part
+
+            // last news part
+            section(class='last-news')
+                div(class='container')
+                    div(class='row')
+                        div(class='col-md-6 col-lg-3')
+                            div(class='title')
+                                h2 Latest News And Articles
+                                p Find out the latest news about our Clinic and information about all kidneys and health needs.
+                                .more 
+                                    a(href="" class="btn hvr-sweep-to-top") Read More 
+                        div(class='col-md-6 col-lg-3')
+                            div(class='news-box wow fadeInUp' data-wow-duration='1s')
+                                div(class='image')
+                                    img(src='images/news/01.jpg' class="serv-img img-fluid" alt='')
+                                div(class='news-details')
+                                    h3 Identifying And Treating Pain From Nerve Tension
+                                    p Nerve tension is pain that occurs because a nerve is being compressed or stuck in its surrounding tissue which prevents…
+                                    div(class='clickable')
+                                        a(href='' class='btn') read post
+                                            img(src="images/svg/arrow.svg", class="img-fluid", alt="")
+                        div(class='col-md-6 col-lg-3')
+                            div(class='news-box wow fadeInUp' data-wow-duration='1s')
+                                div(class='image')
+                                    img(src='images/news/02.jpg' class="serv-img img-fluid" alt='')
+                                div(class='news-details')
+                                    h3 Identifying And Treating Pain From Nerve Tension
+                                    p Nerve tension is pain that occurs because a nerve is being compressed or stuck in its surrounding tissue which prevents…
+                                    div(class='clickable')
+                                        a(href='' class='btn') read post
+                                            img(src="images/svg/arrow.svg", class="img-fluid", alt="")
+                        div(class='col-md-6 col-lg-3')
+                            div(class='news-box wow fadeInUp' data-wow-duration='1s')
+                                div(class='image')
+                                    img(src='images/news/03.jpg' class="serv-img img-fluid" alt='')
+                                div(class='news-details')
+                                    h3 Identifying And Treating Pain From Nerve Tension
+                                    p Nerve tension is pain that occurs because a nerve is being compressed or stuck in its surrounding tissue which prevents…
+                                    div(class='clickable')
+                                        a(href='' class='btn') read post
+                                            img(src="images/svg/arrow.svg", class="img-fluid", alt="")
+            // last news part
+            include includes/ar/footer.pug
+    include includes/ar/scripts.pug

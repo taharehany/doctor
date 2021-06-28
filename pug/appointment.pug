@@ -1,0 +1,230 @@
+doctype 
+html(lang="en")
+    head
+        include includes/en/head.pug
+    body
+        .main-wrapper.appointment-page
+            include includes/en/topnav.pug
+            include includes/en/header.pug
+
+            // banner part
+            section(class='banner')
+                div(class='container')
+                    div(class='banner-content')
+                        .row 
+                            .col-5.col-lg-8
+                            .col-7.col-lg-4
+                                h2 Appointment
+                                ul.navigation
+                                    li 
+                                        a(href="index.html" class="") home 
+                                            img(src="images/svg/arrow2.svg", alt="") 
+                                        span Appointment
+            // banner part
+            
+            // appointment part
+            section(class='appointment-area')
+                div(class='container')
+                    .title
+                      h2 BOOK AN APPOINTMENT
+                    div(class='form-wizard')
+                      form(role='form' action='' method='post')
+                        // Form progress
+                        div(class='form-wizard-steps form-wizard-tolal-steps-4')
+                          div(class='form-wizard-step active')
+                            span(class='form-wizard-step-icon')
+                              i(class='fas fa-check' aria-hidden='true')
+                            span.text Services 
+                        
+                          div(class='form-wizard-step form-wizard-step2')
+                            span(class='form-wizard-step-icon')
+                              i(class='fas fa-check' aria-hidden='true')
+                            span.text Date&Time 
+                          
+                          div(class='form-wizard-step form-wizard-step3')
+                            span(class='form-wizard-step-icon')
+                              i(class='fas fa-check' aria-hidden='true')
+                            span.text Payment 
+
+                          div(class='form-wizard-step')
+                            span(class='form-wizard-step-icon')
+                              i(class='fas fa-check' aria-hidden='true')
+                            span.text Confirmation 
+                          
+                        fieldset.step_1
+                          .row 
+                            .col-md-12.col-lg-4
+                              div(class='select-box')
+                                  .image-area
+                                    .icon 
+                                      img(src="images/appointment/03.png", class="img-fluid", alt="") 
+                                  .choise
+                                    h2 Clinic Consultation
+                                      span.diff-font test
+                                    p 
+                                      span 20$
+                                    div(class='form-group')
+                                      button(type="button" value="test value 3" class='form-control') Select
+                            .col-md-12.col-lg-4
+                              div(class='select-box')
+                                  .image-area
+                                      .icon 
+                                        img(src="images/appointment/03.png", class="img-fluid", alt="") 
+                                  .choise
+                                    h2 Urgent Consultation
+                                      span.diff-font Clinic Visit
+                                    p 
+                                      span 20$
+                                    div(class='form-group')
+                                      button(type="button" value="test value 4" class='urgent form-control') Select
+                          input(type="text" class="services_hidden_input" value="" hidden)  
+                          div(class='form-wizard-buttons')
+                            button(type='button' class='btn btn-next') Next
+
+                        // Form Step 2
+                        fieldset.date_and_time
+                          p.you_cant You cannot choose
+                          div#datetimepicker
+                          div(class='form-wizard-buttons')
+                            button(type='button' class='btn btn-previous') Back
+                            button(type='button' class='btn btn-next') Next
+                        
+                        // Form Step 3
+                        fieldset.payment
+                          .payment-content
+                            .row 
+                              div(class='col-lg-5')
+                                .payment-data 
+                                  .service
+                                    .title
+                                      h2 Service 
+                                    .box 
+                                      .icon 
+                                        img(src="images/appointment/03.png", class="img-fluid", alt="")
+                                        span.type Home consultation
+                                      span.price 20 EGP
+                                  .date-time
+                                    .title
+                                      h2 Date&Time 
+                                    .box 
+                                      span.date Date: 6/6/2020
+                                      span.time Time: 09:00AM
+                                  .promo-code
+                                    div(class='form-group')
+                                        input(placeholder='Promo code' class='form-control' type='text')
+                                        button(class='btn btn-next') Apply
+                                  .subtotal
+                                    .part 
+                                      h3 Subtotal
+                                      span.total 20 EGP
+                                    .part 
+                                      h3 Discount 
+                                      span.dis 0
+                                  .the-total
+                                    h3 TOTAL
+                                    span.total 20 EGP
+                              div(class='col-lg-6 offset-lg-1')
+                                div(class='payment-box')
+                                  div(class='form-area')
+                                    .payment-inputs 
+                                      div(class='title')
+                                        h2 Please Enter Needed Information
+                                      div(class='form-group')
+                                          input(placeholder='Your Name' class='form-control' type='text' required)
+                                      div(class='form-group')
+                                          input(placeholder='Mobile' class='form-control' type='number' required)    
+                                      div(class='form-group')
+                                          input(placeholder='E-mail' class='form-control' type='email' required)        
+                                    //.payment-info 
+                                      div(class='title')
+                                        h2 Payment Information
+                                      .row 
+                                        .col-lg-12
+                                          div(class='form-group')
+                                            label Card Number
+                                            input(class='form-control' type='text' value="4589100098401380" readonly)
+                                        .col-lg-12
+                                          div(class='form-group')
+                                            label Cardholder Name 
+                                            input(class='form-control' type='text' value="MOHAMED AHMED ALI" readonly)
+                                        .col-lg-6
+                                          div(class='form-group')
+                                            label Valid Thru
+                                            input(class='form-control' type='text' value="09/22" readonly)
+                                        .col-lg-6
+                                          div(class='form-group')
+                                            label CVV Number
+                                            input(class='form-control' type='text' value="276" readonly)
+
+                          div(class='form-wizard-buttons')
+                            button(type='button' class='btn btn-previous pay_btn') Back
+                            button(type='button' class='btn btn-next') Next
+                        
+                        // Form Step 4
+                        fieldset.confirmation
+                          div(class='confirmation-content')
+                            .confirmation-box
+                              .patient-information
+                                .title
+                                  h2 Date&Time 
+                                .box
+                                  h2 Name:
+                                    span Ahmed khaled
+                                .box
+                                  h2 Mobile:
+                                    span 01111111111
+                                .box
+                                  h2 Email:
+                                    span Ahmedkhaled@gmail.com
+                              .service
+                                .title
+                                  h2 Service 
+                                .box 
+                                  .icon 
+                                    img(src="images/appointment/03.png", class="img-fluid", alt="")
+                                    span.type Home consultation
+                                  span.price 20 EGP      
+                              .date-time
+                                .title
+                                  h2 Date&Time 
+                                .box 
+                                  span.date Date: 6/6/2020
+                                  span.time Time: 09:00AM
+                              .promo-code
+                                div(class='form-group')
+                                  input(placeholder='Promo code' class='form-control' type='text')
+                                  button(type='button' class='btn btn-next') Apply
+                              .subtotal
+                                .part 
+                                  h3 Subtotal
+                                  span.total 20 EGP
+                                .part 
+                                  h3 Discount 
+                                  span.dis 0
+                              .the-total
+                                h3 TOTAL
+                                span.total 20 EGP
+                              .paypal
+                                #smart-button-container
+                                  div(style='text-align: center;')
+                                    #paypal-button-container
+  
+                          div(class='form-wizard-buttons')
+                            button(type='button' class='btn btn-previous') Back
+                            button(type="button" class='btn btn-submit') Confirm
+
+                      // Form Step 5
+                      div.booking-confirmed 
+                        .icon 
+                          img(src="images/svg/confirm.svg",class="img-fluid", alt="") 
+                        .text
+                          h2 Booking Confirmed!
+                          p We will call you back to confirm the appointment.
+                          p Reservation number: 
+                            span 21514525541
+                      // Form Wizard
+
+
+            // appointment part
+            include includes/en/footer.pug
+    include includes/en/scripts.pug
